@@ -2,7 +2,7 @@ package com.example.qualifierexample;
 
 import org.springframework.stereotype.Component;
 
-@Component("fooFormatter")
+@Component
 public class FooFormatter implements Formatter {
 
     public String format() {

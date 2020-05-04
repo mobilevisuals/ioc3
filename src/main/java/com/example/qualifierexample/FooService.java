@@ -7,8 +7,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class FooService {
 
-    @Qualifier("barFormatter")
-    @Autowired
+
     private Formatter formatter;
 
+
+    @Autowired
+    public void setFormatter(@Qualifier("barFormatter") Formatter formatter) {
+        this.formatter = formatter;
+    }
 }
